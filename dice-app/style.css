@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    color: #ffffffc7;
+}
+
+
+.dice-container {
+    text-align: center;
+    background: #2c2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 60px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+#diceImage {
+    width: 150px;
+    height: 150px;
+    transition: transform 0.2s;
+}
+
+
+#rollBtn {
+    margin-top: 20px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+#rollBtn:hover {
+    background-color: #218838;
+}
+
+#rollBtn:active {
+    transform: scale(0.95);
+}
+
+
+@keyframes roll {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(720deg); }
+}
