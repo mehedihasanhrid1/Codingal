@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ShopZone - Your one-stop shop for the best deals online!</title>
+<meta name="description" content="ShopZone - Your one-stop shop for the best deals online!">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top rounded-circle">
+                <span style="font-size: 2rem; font-weight: bold; margin-left: 0.5rem;">ShopZone</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0" style="font-size: 1.15rem;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex ms-lg-3 mt-2 mt-lg-0" style="font-size: 1.15rem;">
+                    <button class="btn btn-outline-primary me-2" type="button">Login</button>
+                    <button class="btn btn-primary" type="button">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div id="marketingCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="carousel-slide-bg d-flex align-items-center" style="background-image: url('banner1.jpg');">
+        <div class="container text-white">
+          <h1 class="display-4 fw-bold">Mega Summer Sale</h1>
+          <p class="lead">Get up to 70% off on top fashion brands today.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="carousel-slide-bg d-flex align-items-center" style="background-image: url('banner2.jpg');">
+        <div class="container text-white">
+          <h1 class="display-4 fw-bold">Electronics Bonanza</h1>
+          <p class="lead">Exclusive deals on gadgets and accessories.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="carousel-slide-bg d-flex align-items-center" style="background-image: url('banner2.jpg');">
+        <div class="container text-white">
+          <h1 class="display-4 fw-bold">Back to School</h1>
+          <p class="lead">Everything students need, all in one place.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="carousel-item">
+      <div class="carousel-slide-bg d-flex align-items-center" style="background-image: url('banner2.jpg');">
+        <div class="container text-white">
+          <h1 class="display-4 fw-bold">Home Essentials</h1>
+          <p class="lead">Upgrade your space with our curated picks.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 5 -->
+    <div class="carousel-item">
+      <div class="carousel-slide-bg d-flex align-items-center" style="background-image: url('banner2.jpg');">
+        <div class="container text-white">
+          <h1 class="display-4 fw-bold">Flash Deals Hour</h1>
+          <p class="lead">Hurry up! Limited-time offers are live now.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#marketingCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#marketingCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+  
+</div>
+
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="mb-4 fw-bold text-center">Trending Products</h2>
+    <div class="row g-4">
+      <!-- Row 1 -->
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="https://static-01.daraz.com.bd/p/5d26b46c317c022dc274acb95d39444f.jpg" class="card-img-top product-img" alt="Classic Denim Jacket">
+          <div class="card-body">
+            <h5 class="card-title">Classic Denim Jacket</h5>
+            <p class="card-text">$49.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="product2.jpg" class="card-img-top product-img" alt="Summer Floral Dress">
+          <div class="card-body">
+            <h5 class="card-title">Summer Floral Dress</h5>
+            <p class="card-text">$39.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="product3.jpg" class="card-img-top product-img" alt="Men's Slim Fit Chinos">
+          <div class="card-body">
+            <h5 class="card-title">Men's Slim Fit Chinos</h5>
+            <p class="card-text">$29.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="product4.jpg" class="card-img-top product-img" alt="Leather Crossbody Bag">
+          <div class="card-body">
+            <h5 class="card-title">Leather Crossbody Bag</h5>
+            <p class="card-text">$59.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="product5.jpg" class="card-img-top product-img" alt="Chunky White Sneakers">
+          <div class="card-body">
+            <h5 class="card-title">Chunky White Sneakers</h5>
+            <p class="card-text">$54.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="product6.jpg" class="card-img-top product-img" alt="Women's Oversized Sweater">
+          <div class="card-body">
+            <h5 class="card-title">Women's Oversized Sweater</h5>
+            <p class="card-text">$34.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="product7.jpg" class="card-img-top product-img" alt="Aviator Sunglasses">
+          <div class="card-body">
+            <h5 class="card-title">Aviator Sunglasses</h5>
+            <p class="card-text">$19.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="product8.jpg" class="card-img-top product-img" alt="Men's Graphic T-Shirt">
+          <div class="card-body">
+            <h5 class="card-title">Men's Graphic T-Shirt</h5>
+            <p class="card-text">$24.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Row 3 -->
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="product9.jpg" class="card-img-top product-img" alt="Boho Maxi Skirt">
+          <div class="card-body">
+            <h5 class="card-title">Boho Maxi Skirt</h5>
+            <p class="card-text">$44.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="product10.jpg" class="card-img-top product-img" alt="Unisex Canvas Backpack">
+          <div class="card-body">
+            <h5 class="card-title">Unisex Canvas Backpack</h5>
+            <p class="card-text">$32.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="product11.jpg" class="card-img-top product-img" alt="Striped Polo Shirt">
+          <div class="card-body">
+            <h5 class="card-title">Striped Polo Shirt</h5>
+            <p class="card-text">$27.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100">
+          <img src="product12.jpg" class="card-img-top product-img" alt="Women's Ankle Boots">
+          <div class="card-body">
+            <h5 class="card-title">Women's Ankle Boots</h5>
+            <p class="card-text">$69.99</p>
+            <a href="#" class="btn btn-primary w-100">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
