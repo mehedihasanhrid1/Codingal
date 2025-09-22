@@ -8,3 +8,14 @@ menuToggle.addEventListener("click", () => {
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-xmark");
 });
+
+
+document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
