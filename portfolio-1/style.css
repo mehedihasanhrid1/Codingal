@@ -261,91 +261,90 @@ nav {
 
 
 @media (max-width: 640px) {
-
-        .banner-img {
+    
+    .banner-img {
         height: 340px;
         width: 340px;
         }
         .nav-item li a {
             font-size: 16px;
         }
-        .banner-container {
+    .banner-container {
             gap: 24px;
             margin: 24px 0 0 0;
         }
     
-        .banner-head p {
+    .banner-head p {
             font-size: 22px;
         }
     
-        .banner-head h1 {
+    .banner-head h1 {
             font-size: 36px;
         }
     
-        .banner-head h2 {
+    .banner-head h2 {
             font-size: 28px;
         }
     
-        .btn-view {
+    .btn-view {
             font-size: 14px;
         }
     
-        .btn-download {
+    .btn-download {
             font-size: 14px;
         }
     
-        .banner-icon {
+    .banner-icon {
             margin-top: 10px;
             font-size: 34px;
         }
     
-        .banner-icon a {
+    .banner-icon a {
             text-decoration: none;
             color: #000;
         }
     
-        .banner-icon a:hover {
+    .banner-icon a:hover {
             cursor: pointer;
         }
 
-        .section-title {
+    .section-title {
             font-size: 30px;
             margin-bottom: 20px;
         }
     
-        .about-section {
+    .about-section {
             padding-top: 20px;
         }
     
-        .about-container {
+    .about-container {
             gap: 24px;
 
         }
     
-        .about-img {
+    .about-img {
             width: 320px;
             height: 300px;
         }
     
-        .about-text {
+    .about-text {
             font-size: 18px;
             padding:0 20px;
         }
     
-        .skills-section {
+    .skills-section {
             padding-top: 28px;
         }
     
-        .skills-container {
+    .skills-container {
             gap: 28px;
             margin-top: 20px;
             padding: 0 28px;
         }
     
-        .skill-card {
+    .skill-card {
             padding: 20px 14px;
-        }
-    
+        } 
     
 }
 
@@ -381,6 +380,43 @@ nav {
 
     .banner-container {
         flex-direction: column;
+        gap: 36px;
+        margin: 36px 0;
 
     }
+    
+        .section-title {
+            margin-bottom: 28px;
+        }
+    
+        .about-section {
+            padding-top: 14px;
+            background-color: #fafafa;
+        }
+    
+        .about-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 28px;
+        }
+    
+
+        .about-text {
+            padding: 0 28px;
+        }
+    
+        .skills-section {
+            padding-top: 40px;
+            padding-bottom: 32px;
+            background-color: #fff;
+        }
+    
+        .skills-container {
+            padding: 0 28px;
+        }
+    
+        .skill-card {
+            padding: 28px 20px;
+        }
+    
 }
