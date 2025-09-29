@@ -168,3 +168,4 @@ while True:
     draw_figures()
     draw_scores()
     pygame.display.update()
+
