@@ -107,3 +107,25 @@ def handle_ai(name):
             print(Fore.RED + "Invalid input. Try again.\n")
 
  
+    print(f"{Fore.BLUE}\nFinding movies for {name}", end="", flush=True)
+    processing_animation()  
+
+    recs = recommend_movies(genre=genre, mood=mood, rating=rating, top_n=5)
+    if isinstance(recs, str):
+        print(Fore.RED + recs + "\n")
+    else:
+        display_recommendations(recs, name)
+
+    while True:
+        action = input(Fore.YELLOW + "\nWould you like more recommendations? (yes/no): ").strip().lower()
+        if action == 'no':
+            print(Fore.GREEN + f"\nEnjoy your movie picks, {name}! 🎬🍿\n")
+            break
+        elif action == 'yes':
+            recs = recommend_movies(genre=genre, mood=mood, rating=rating, top_n=5)
+            if isinstance(recs, str):
+                print(Fore.RED + recs + "\n")
+            else:
+                display_recommendations(recs, name)
+        else:
+            print(Fore.RED + "Invalid choice. Try again.\n")
