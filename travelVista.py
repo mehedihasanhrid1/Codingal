@@ -63,3 +63,73 @@ TRAVELVISTA_DATA = [
         ]
     }
 ]
+
+
+def normalize(text):
+    return re.sub(r"\s+", " ", text.strip().lower())
+
+def detect_intent(message):
+    for block in TRAVELVISTA_DATA:
+        for keyword in block["keywords"]:
+            if keyword in message:
+                return block
+    return None
+
+
+def recommendation_flow(data):
+    print(Fore.CYAN + "TravelVista: Preferred category? (beaches / mountains / cities / heritage)")
+    choice = normalize(input(Fore.YELLOW + "You: "))
+    if choice in data["categories"]:
+        info = data["categories"][choice]
+        destination = random.choice(info["places"])
+        month = random.choice(info["best_months"])
+        print(Fore.GREEN + f"TravelVista: Recommended destination → {destination}")
+        print(Fore.GREEN + f"TravelVista: Ideal travel period → {month}")
+    else:
+        print(Fore.RED + "TravelVista: Category not supported")
+
+
+def packing_flow(data):
+    print(Fore.CYAN + "TravelVista: Trip duration in days?")
+    try:
+        days = int(input(Fore.YELLOW + "You: "))
+    except:
+        print(Fore.RED + "TravelVista: Invalid duration")
+        return
+    for rule in data["rules"]:
+        if rule["min"] <= days <= rule["max"]:
+            print(Fore.GREEN + "TravelVista: Suggested packing list:")
+            for item in rule["items"]:
+                print(Fore.GREEN + f"- {item}")
+            return
+    print(Fore.RED + "TravelVista: No applicable packing rule")
+    
+    
+def budget_flow(data):
+    print(Fore.CYAN + "TravelVista: Budget level? (low / medium / high)")
+    level = normalize(input(Fore.YELLOW + "You: "))
+    if level in data["levels"]:
+        print(Fore.GREEN + f"TravelVista: {data['levels'][level]}")
+    else:
+        print(Fore.RED + "TravelVista: Invalid budget selection")
+
+def weather_flow(data):
+    print(Fore.CYAN + "TravelVista: Destination type?")
+    category = normalize(input(Fore.YELLOW + "You: "))
+    if category in data["guidance"]:
+        print(Fore.GREEN + f"TravelVista: {data['guidance'][category]}")
+    else:
+        print(Fore.RED + "TravelVista: Weather guidance unavailable")
+        
+
+def joke_flow(data):
+    print(Fore.YELLOW + f"TravelVista: {random.choice(data['responses'])}")
+
+def show_help():
+    print(Fore.MAGENTA + "\nTravelVista Capabilities:")
+    print(Fore.GREEN + "- Destination recommendations")
+    print(Fore.GREEN + "- Packing guidance")
+    print(Fore.GREEN + "- Budget planning")
+    print(Fore.GREEN + "- Weather insights")
+    print(Fore.GREEN + "- Light humour")
+    print(Fore.CYAN + "Type exit or bye to close the session\n")
