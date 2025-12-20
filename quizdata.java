@@ -1,0 +1,61 @@
+ private void seedQuestions() {
+        addSeed("General Knowledge", "What is the capital of France?", new String[]{"Paris","Rome","Madrid","Berlin"},0,"easy");
+        addSeed("General Knowledge", "Which planet is known as the Red Planet?", new String[]{"Mars","Venus","Jupiter","Saturn"},0,"easy");
+        addSeed("General Knowledge", "Who wrote 'Romeo and Juliet'?", new String[]{"William Shakespeare","Charles Dickens","Jane Austen","Mark Twain"},0,"easy");
+        addSeed("Geography", "Which river flows through London?", new String[]{"Thames","Seine","Danube","Rhine"},0,"easy");
+        addSeed("History", "Who was the first President of the United States?", new String[]{"George Washington","Thomas Jefferson","Abraham Lincoln","John Adams"},0,"easy");
+        addSeed("Science", "Water boils at what temperature (Celsius) at sea level?", new String[]{"100","90","80","120"},0,"easy");
+        addSeed("Math", "What is 12 * 12?", new String[]{"144","124","154","132"},0,"easy");
+        addSeed("Programming", "Which language is primarily used for Android app development?", new String[]{"Java","Python","C#","Ruby"},0,"easy");
+        addSeed("Sports", "How many players in a soccer team on the field?", new String[]{"11","10","9","12"},0,"easy");
+        addSeed("Entertainment", "Which movie features the character 'Darth Vader'?", new String[]{"Star Wars","The Matrix","Titanic","Avatar"},0,"easy");
+        addSeed("General Knowledge", "What is the largest ocean on Earth?", new String[]{"Pacific Ocean","Atlantic Ocean","Indian Ocean","Arctic Ocean"},0,"easy");
+        addSeed("Science", "Which gas do plants absorb from the atmosphere?", new String[]{"Carbon Dioxide","Oxygen","Nitrogen","Hydrogen"},0,"easy");
+        addSeed("Math", "What is the value of pi (approx)?", new String[]{"3.14","2.72","1.62","4.13"},0,"easy");
+        addSeed("History", "The Great Wall is located in which country?", new String[]{"China","India","Japan","Korea"},0,"easy");
+        addSeed("Geography", "Mount Everest is in which mountain range?", new String[]{"Himalayas","Andes","Rockies","Alps"},0,"easy");
+        addSeed("Programming", "HTML is primarily used for?", new String[]{"Structuring web pages","Backend logic","Database management","Mobile apps"},0,"easy");
+        addSeed("General Knowledge", "Which instrument has keys, pedals and strings?", new String[]{"Piano","Guitar","Violin","Drum"},0,"easy");
+        addSeed("Science", "What force keeps us on the ground?", new String[]{"Gravity","Friction","Magnetism","Electricity"},0,"easy");
+        addSeed("Math", "What is 7 squared?", new String[]{"49","42","56","36"},0,"easy");
+        addSeed("History", "Who discovered penicillin?", new String[]{"Alexander Fleming","Marie Curie","Louis Pasteur","Gregor Mendel"},0,"medium");
+        addSeed("Geography", "Which country has the most population?", new String[]{"China","USA","India","Russia"},2,"medium");
+        addSeed("Science", "What is the chemical symbol for Gold?", new String[]{"Au","Ag","Gd","Go"},0,"medium");
+        addSeed("Programming", "Which data structure uses FIFO?", new String[]{"Queue","Stack","Tree","Graph"},0,"medium");
+        addSeed("Math", "Derivative of x^2 is?", new String[]{"2x","x","x^2","2"},0,"medium");
+        addSeed("General Knowledge", "Which country gifted the Statue of Liberty to the USA?", new String[]{"France","England","Germany","Spain"},0,"medium");
+        addSeed("Entertainment", "Who played Jack in 'Titanic'?", new String[]{"Leonardo DiCaprio","Brad Pitt","Tom Cruise","Johnny Depp"},0,"medium");
+        addSeed("Sports", "In which sport is the term 'love' used?", new String[]{"Tennis","Cricket","Football","Basketball"},0,"easy");
+        addSeed("Programming", "Which keyword creates a subclass in Java?", new String[]{"extends","implements","inherits","super"},0,"medium");
+        addSeed("Science", "Which planet has a ring system?", new String[]{"Saturn","Earth","Mercury","Mars"},0,"medium");
+        addSeed("History", "In which year did World War II end?", new String[]{"1945","1939","1918","1950"},0,"medium");
+        addSeed("Math", "What is the integral of 1/x dx?", new String[]{"ln|x|","x","1/x","e^x"},0,"hard");
+        addSeed("Programming", "Which language introduced the concept of 'prototype' in objects?", new String[]{"JavaScript","C++","Java","Python"},0,"hard");
+        addSeed("General Knowledge", "Which element has atomic number 1?", new String[]{"Hydrogen","Helium","Oxygen","Carbon"},0,"easy");
+        addSeed("Geography", "What is the capital city of Australia?", new String[]{"Canberra","Sydney","Melbourne","Perth"},0,"medium");
+        addSeed("Science", "Which particle has a negative charge?", new String[]{"Electron","Proton","Neutron","Photon"},0,"easy");
+        addSeed("Math", "What is the solution to 2x+3=7?", new String[]{"2","1","3","4"},0,"easy");
+        addSeed("History", "Who was known as the Maid of Orléans?", new String[]{"Joan of Arc","Cleopatra","Queen Elizabeth I","Catherine the Great"},0,"hard");
+        addSeed("Programming", "What does SQL stand for?", new String[]{"Structured Query Language","Simple Query Logic","Sequential Query Language","Structured Question Language"},0,"medium");
+        addSeed("General Knowledge", "Which month has an extra day in a leap year?", new String[]{"February","March","January","April"},0,"easy");
+        addSeed("Sports", "How many points is a touchdown worth in American football?", new String[]{"6","3","1","2"},0,"medium");
+        addSeed("Entertainment", "Who sang 'Thriller'?", new String[]{"Michael Jackson","Prince","Madonna","Elvis Presley"},0,"easy");
+        addSeed("Science", "What is the nearest star to Earth?", new String[]{"Sun","Sirius","Alpha Centauri","Vega"},0,"easy");
+        addSeed("Programming", "Which of these is an interpreted language?", new String[]{"Python","C","C++","Go"},0,"medium");
+        addSeed("Math", "What is the next prime after 7?", new String[]{"11","9","10","13"},0,"medium");
+        addSeed("Geography", "Which desert is the largest hot desert?", new String[]{"Sahara","Gobi","Kalahari","Great Victoria"},0,"medium");
+        addSeed("History", "The Renaissance began in which country?", new String[]{"Italy","France","England","Germany"},0,"hard");
+        addSeed("General Knowledge", "What device do we use to look at stars?", new String[]{"Telescope","Microscope","Periscope","Stethoscope"},0,"easy");
+        addSeed("Science", "Which vitamin is produced when skin is exposed to sunlight?", new String[]{"Vitamin D","Vitamin C","Vitamin B12","Vitamin A"},0,"easy");
+        addSeed("Programming", "Which operator is used for equality in Java?", new String[]{"==","=","equals","==="},0,"easy");
+        addSeed("Math", "What is factorial of 5 (5!)?", new String[]{"120","24","60","720"},0,"medium");
+        addSeed("Geography", "Which US state is known as the Sunshine State?", new String[]{"Florida","California","Texas","Arizona"},0,"easy");
+        addSeed("Entertainment", "Which director made 'Jurassic Park'?", new String[]{"Steven Spielberg","James Cameron","Christopher Nolan","Quentin Tarantino"},0,"medium");
+        addSeed("Science", "What is H2O commonly known as?", new String[]{"Water","Hydrogen Peroxide","Ozone","Salt"},0,"easy");
+        addSeed("Math", "How many degrees in a right angle?", new String[]{"90","45","180","60"},0,"easy");
+    }
+    private void addSeed(String category, String text, String[] opts, int correct, String diff) {
+        Question q = new Question(category, text, opts, correct, diff);
+        bank.computeIfAbsent(category, k -> new ArrayList<>()).add(q);
+    }
+}
